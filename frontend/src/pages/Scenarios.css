@@ -1,0 +1,217 @@
+.scenarios-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.scenario-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.scenario-header h2 {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+  font-size: 1.75rem;
+}
+
+.scenario-description {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.scenario-section {
+  margin-bottom: 1.5rem;
+}
+
+.scenario-section h3 {
+  color: #374151;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.scenario-section h4 {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.changes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.change-item {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.change-pillar {
+  font-size: 0.75rem;
+  color: #667eea;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.change-metric {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.change-values {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.current-value {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  color: #9ca3af;
+}
+
+.proposed-value {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.change-cost {
+  font-size: 0.85rem;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.impacts-grid-small {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.impact-item {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.impact-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.impact-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.risks-opportunities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.risks-col ul,
+.opportunities-col ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.risks-col li {
+  color: #ef4444;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.opportunities-col li {
+  color: #10b981;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.scenario-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .scenarios-page {
+    padding: 1rem;
+  }
+
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impacts-grid-small {
+    grid-template-columns: 1fr;
+  }
+
+  .risks-opportunities {
+    grid-template-columns: 1fr;
+  }
+
+  .scenario-actions {
+    flex-direction: column;
+  }
+}

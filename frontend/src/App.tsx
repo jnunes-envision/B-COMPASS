@@ -1,73 +1,36 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-
-interface ApiResponse {
-  status?: string;
-  message: string;
-  version?: string;
-}
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import DashboardEnhanced from './pages/DashboardEnhanced';
+import Interconnections from './pages/Interconnections';
+import RoleDashboard from './pages/RoleDashboard';
+import ImpactAnalysis from './pages/ImpactAnalysis';
+import Scenarios from './pages/Scenarios';
+import AntiPatterns from './pages/AntiPatterns';
+import Pillars from './pages/Pillars';
+import './App.css';
 
 function App() {
-  const [apiStatus, setApiStatus] = useState<ApiResponse | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch('/api/health')
-      .then(res => res.json())
-      .then(data => {
-        setApiStatus(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Failed to connect to API:', err);
-        setLoading(false);
-      });
-  }, []);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to B-COMPASS</h1>
-        <p>A modern full-stack web application</p>
-
-        <div className="api-status">
-          <h2>API Status</h2>
-          {loading ? (
-            <p>Checking API connection...</p>
-          ) : apiStatus ? (
-            <div className="status-ok">
-              <p>✓ {apiStatus.message}</p>
-              <p className="status-badge">Status: {apiStatus.status}</p>
-            </div>
-          ) : (
-            <p className="status-error">✗ Failed to connect to API</p>
-          )}
-        </div>
-
-        <div className="tech-stack">
-          <h2>Tech Stack</h2>
-          <div className="stack-grid">
-            <div className="stack-item">
-              <h3>Frontend</h3>
-              <ul>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Vite</li>
-              </ul>
-            </div>
-            <div className="stack-item">
-              <h3>Backend</h3>
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>TypeScript</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <Navigation />
+        <main className="app-main">
+          <Routes>
+            <Route path="/" element={<DashboardEnhanced />} />
+            <Route path="/interconnections" element={<Interconnections />} />
+            <Route path="/role-dashboard" element={<RoleDashboard />} />
+            <Route path="/impact-analysis" element={<ImpactAnalysis />} />
+            <Route path="/scenarios" element={<Scenarios />} />
+            <Route path="/anti-patterns" element={<AntiPatterns />} />
+            <Route path="/pillars" element={<Pillars />} />
+          </Routes>
+        </main>
+        <footer className="app-footer">
+          <p>Busula - The Startup Business Compass | Mock Data Mode</p>
+        </footer>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

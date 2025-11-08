@@ -1,0 +1,276 @@
+.anti-patterns-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.detection-summary {
+  margin-bottom: 2rem;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.summary-stat {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.patterns-section {
+  margin-bottom: 2rem;
+}
+
+.patterns-section h2 {
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.patterns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pattern-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pattern-card.detected {
+  border-left: 6px solid #ef4444;
+}
+
+.pattern-header {
+  margin-bottom: 1.5rem;
+}
+
+.pattern-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pattern-title h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.severity-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.affected-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pillar-badge {
+  background: #f3f4f6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.pattern-description {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.pattern-details {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h4 {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail-section ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.detail-section li {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.consequences-list li {
+  color: #ef4444;
+}
+
+.solution-section {
+  background: #ecfdf5;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+}
+
+.solution-section h4 {
+  color: #065f46;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.solution-section p {
+  color: #064e3b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.pattern-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-resolve,
+.btn-dismiss {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-resolve {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  flex: 1;
+}
+
+.btn-resolve:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-dismiss {
+  background: white;
+  border: 2px solid #d1d5db;
+  color: #6b7280;
+}
+
+.btn-dismiss:hover {
+  background: #f9fafb;
+}
+
+.patterns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.pattern-card-small {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #10b981;
+}
+
+.pattern-card-small h4 {
+  margin: 0 0 0.75rem 0;
+  color: #1f2937;
+  font-size: 1.1rem;
+}
+
+.pattern-card-small p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.affected-pillars-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pillar-badge-small {
+  background: #f3f4f6;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .anti-patterns-page {
+    padding: 1rem;
+  }
+
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pattern-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pattern-actions {
+    flex-direction: column;
+  }
+
+  .patterns-grid {
+    grid-template-columns: 1fr;
+  }
+}

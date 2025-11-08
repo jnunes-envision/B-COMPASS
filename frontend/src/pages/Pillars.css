@@ -1,0 +1,284 @@
+.pillars-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pillars-detailed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pillar-detail-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.pillar-info {
+  flex: 1;
+}
+
+.pillar-info h2 {
+  margin: 0 0 0.75rem 0;
+  color: #1f2937;
+  font-size: 1.75rem;
+}
+
+.pillar-desc {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pillar-score-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.score-text {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.dimension-scores {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.dimension-scores h3 {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-size: 1.2rem;
+}
+
+.dimensions-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.dimension-mini {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dimension-name {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.dimension-score-mini {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.activities-section h3 {
+  color: #374151;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.activity-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.activity-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.activity-header {
+  margin-bottom: 1rem;
+}
+
+.activity-header h4 {
+  margin: 0 0 0.75rem 0;
+  color: #1f2937;
+  font-size: 1.1rem;
+}
+
+.maturity-display {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.maturity-stars {
+  font-size: 0.9rem;
+}
+
+.maturity-text {
+  font-size: 0.85rem;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.activity-desc {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.maturity-progression {
+  margin-bottom: 1rem;
+}
+
+.progression-label {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.progression-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.progression-dot {
+  width: 24px;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.progression-dot.current {
+  background: #667eea;
+}
+
+.progression-dot.target {
+  border: 2px solid #10b981;
+  background: transparent;
+}
+
+.recommendations {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.recommendations h5 {
+  margin: 0 0 0.5rem 0;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.recommendations ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.recommendations li {
+  color: #667eea;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.impact-weights {
+  margin-bottom: 1rem;
+}
+
+.impact-weights h5 {
+  margin: 0 0 0.5rem 0;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.weights-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.weight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weight-bar {
+  height: 6px;
+  background: #667eea;
+  border-radius: 3px;
+  min-width: 10px;
+}
+
+.weight-value {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.last-assessed {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-align: right;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .pillars-page {
+    padding: 1rem;
+  }
+
+  .pillar-detail-header {
+    flex-direction: column;
+  }
+
+  .pillar-score-box {
+    width: 100%;
+  }
+
+  .dimensions-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+}

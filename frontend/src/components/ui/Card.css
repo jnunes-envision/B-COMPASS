@@ -1,0 +1,152 @@
+.ui-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ui-card.padding-none {
+  padding: 0;
+}
+
+.ui-card.padding-small {
+  padding: 1rem;
+}
+
+.ui-card.padding-medium {
+  padding: 1.5rem;
+}
+
+.ui-card.padding-large {
+  padding: 2rem;
+}
+
+.ui-card.hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.ui-card.clickable {
+  cursor: pointer;
+}
+
+.ui-card.gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Stat Card */
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.stat-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-change {
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.trend-arrow {
+  font-size: 1rem;
+}
+
+/* Metric Card */
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.metric-title {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1;
+}
+
+.metric-subtitle {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.metric-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  min-width: 40px;
+  text-align: right;
+}
