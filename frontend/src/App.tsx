@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Dashboard from './pages/Dashboard';
+import DashboardEnhanced from './pages/DashboardEnhanced';
 import Interconnections from './pages/Interconnections';
 import RoleDashboard from './pages/RoleDashboard';
 import ImpactAnalysis from './pages/ImpactAnalysis';
@@ -16,7 +16,7 @@ function App() {
         <Navigation />
         <main className="app-main">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<DashboardEnhanced />} />
             <Route path="/interconnections" element={<Interconnections />} />
             <Route path="/role-dashboard" element={<RoleDashboard />} />
             <Route path="/impact-analysis" element={<ImpactAnalysis />} />
