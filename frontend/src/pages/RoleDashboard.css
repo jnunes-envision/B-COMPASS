@@ -1,0 +1,310 @@
+.role-dashboard-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.role-selector-section {
+  margin-bottom: 2rem;
+}
+
+.role-selector-section h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.role-btn {
+  background: white;
+  border: 2px solid transparent;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-btn:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+.role-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.role-overview-section {
+  margin-bottom: 2rem;
+}
+
+.role-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.role-card h2 {
+  margin-top: 0;
+  color: #1f2937;
+  font-size: 2rem;
+}
+
+.role-description {
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.role-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pillar-group h3 {
+  color: #374151;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.pillar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pillar-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.pillar-tag.primary {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.pillar-tag.cross {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.responsibilities {
+  margin-top: 2rem;
+}
+
+.responsibilities h3 {
+  color: #374151;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.responsibilities ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.responsibilities li {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.metrics-section {
+  margin-bottom: 2rem;
+}
+
+.metrics-section h2 {
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.metric-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card h3 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0.5rem 0;
+}
+
+.metric-change {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-change.up {
+  color: #10b981;
+}
+
+.metric-change.down {
+  color: #ef4444;
+}
+
+.metric-change.stable {
+  color: #6b7280;
+}
+
+.metric-category {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-card.placeholder {
+  opacity: 0.6;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.pillars-detail-section {
+  margin-bottom: 2rem;
+}
+
+.pillars-detail-section h2 {
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.pillar-detail-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pillar-detail-card h3 {
+  margin-top: 0;
+  color: #1f2937;
+  font-size: 1.2rem;
+}
+
+.pillar-score-large {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #667eea;
+  margin: 1rem 0;
+}
+
+.score-max {
+  font-size: 1.5rem;
+  color: #9ca3af;
+}
+
+.pillar-detail-card .pillar-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.activities-count {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.cross-functional-section {
+  margin-bottom: 2rem;
+}
+
+.cross-functional-section h2 {
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.cross-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.cross-pillar-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cross-pillar-card h4 {
+  margin: 0 0 0.75rem 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.small-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .role-dashboard-page {
+    padding: 1rem;
+  }
+
+  .role-buttons {
+    flex-direction: column;
+  }
+
+  .role-btn {
+    width: 100%;
+  }
+
+  .role-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-grid,
+  .pillars-grid,
+  .cross-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
